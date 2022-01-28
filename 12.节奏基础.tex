@@ -1,0 +1,114 @@
+\include{header}
+\begin{document}
+\begin{center} 
+ \Large \textbf{音乐理论基础}\par
+ \textbf{十二.节奏基础}
+\end{center}
+
+\large 
+\begin{center}
+ \textbf{1.节奏}\\
+\end{center}
+
+[\textbf{节奏}] 组织起来的音的长短关系.
+\par
+
+[\textbf{节奏型}] 在整个乐曲或乐曲的部分中, 具有典型意义的节奏.\par
+\qquad 1. 节奏型本身可以说明乐曲的类别, 如进行曲, 圆舞曲等;\par
+\qquad 2. 在创造音乐形象时单是一个节奏型是不够的, 它还必须和其他音乐要素结合起来;\par
+\qquad 3. 在乐曲中运用某些节奏型重复可以提供乐曲结构的统一效果.\par
+
+[\textbf{节奏划分的特殊形式(连音符)}] 将音值自由均分, 其数量与基本划分不一致.\par
+
+[\textbf{三连音}] 把音值分为三部分来代替两部分, 便形成了三连音, 用数字3表示.\par
+\startextract
+\Notes \downtuplet a20\qa e\qa e\qa e \en
+\Notes = \qa e\qa e\en\bar
+\Notes \triolet n\Tqbu eee\en
+\Notes = \Dqbu ee\en
+\zendextract
+
+[\textbf{五连音与六连音}] 把音值分为五(六)部分来代替四部分, 便形成了五(六)连音, 用数字5(6)表示.\par
+\qquad 注意: 两个三连音(重音在第一个和第四个音)和一个六连音(重音在第一个, 第三个和第五个音上)是不同的.\par
+\startextract
+\Notes \def\tuplettxt{5}\downtuplet a40\qa e\qa e\qa e\qa e\qa e\en
+\Notes = \qa e\qa e\qa e\qa e\en\bar
+\Notes \def\tuplettxt{6}\downtuplet a50\qa e\qa e\qa e\qa e\qa e\qa e\en
+\Notes = \qa e\qa e\qa e\qa e\en
+\zendextract
+
+[\textbf{二连音与四连音}] 把带附点的音符分成两(四)个部分来代替三部分, 便形成了二(四)连音, 用数字2(4)表示.\par
+\startextract
+\Notes \def\tuplettxt{2}\downtuplet a10\qa e\qa e\en
+\Notes = \qa e\qa e\qa e\en
+\Notes = \ha{.e}\en\bar
+\Notes \def\tuplettxt{4}\downtuplet a30\qa e\qa e\qa e\qa e\en
+\Notes = \qa e\qa e\qa e\en
+\Notes = \ha{.e}\en
+\zendextract
+
+[\textbf{特殊节奏划分记号}] \par
+\qquad 1. 在一切特殊节奏划分中, 各组音符都根据它所代替的邻近的数字少的基本划分的音值来代替;\par
+\qquad 2. 表示特殊节奏划分的数字, 大都记在共同符尾的一侧, 没有共同符尾的音符, 用中间断开的括弧加上数字记在符头一侧.\par
+
+\clearpage
+
+\begin{center}
+ \textbf{2.节拍}\\
+\end{center}
+
+[\textbf{重音}] 和周围的音相比, 在音的强度上比较突出的音. 用重音记号和小节线表示.\par
+\qquad 实在的重音: 物理上存在的重音;\par
+\qquad 想象的重音: 在休止符或弹奏风琴时的重音.\par
+\startextract
+\Notes \isluru 0l\usf l\qa l \tslur 0l\qa k\en
+\zendextract
+
+[\textbf{节拍}] 有重音和无重音的同样时间片段, 按照一定的次序循环重复. 节拍使用强弱关系来组织音乐的.\par
+
+[\textbf{节拍重音}] 为了构成节拍而使用的重音. 节拍重音多半是有规律地循环出现的.\par
+
+[\textbf{单位拍}] 用来构成节拍的每一时间片段.\par
+
+[\textbf{强拍与弱拍}] \par
+\qquad 强拍: 有重音的单位拍;\par
+\qquad 弱拍: 无重音的单位拍.\par
+
+[\textbf{拍子}] 乐曲中节拍单位用固定的音符来代表, 称为拍子.\par
+
+[\textbf{拍号}] 拍子用分数标记, 表示拍子的记号称为拍号. 拍号记在谱号和调号后面.\par
+\qquad 分子表示每小节中单位拍的数目;\par
+\qquad 分母表示单位拍的音符时值;\par
+\qquad 分数线在五线谱上用第三线代替.\par
+\generalmeter{\meterfrac34}
+\startextract
+\Notes \sh m\en
+\zendextract
+
+[\textbf{小节}] 在乐曲中由一个强拍到下一个强拍之间的部分为一个小节.\par
+
+[\textbf{小节线}] 穿过五线谱使小节之间分开的垂直线, 小节线写在强拍前作为强拍的标记.\par
+\qquad 在乐曲明显分段的地方或乐曲终了处则用双小节线.\par
+
+[\textbf{弱起小节}] 乐曲或乐曲中某一段由弱拍或强拍的弱部分开始, 称为弱起小节, 也称为不完全小节.\par
+\qquad 弱起小节往往和乐曲中某一段的最后一小节合成一个完全小节.\par
+\startextract
+\Notes \islurd 0h\ha h\en\bar
+\Notes \tslur 0h\qa h \Dqbl hk\en\setdoublebar\bar
+\zendextract
+
+\clearpage
+
+\begin{center}
+ \textbf{3.切分音}\\
+\end{center}
+
+[\textbf{切分音}] 从弱拍或强拍的弱部分开始, 并把下一强拍或弱拍的强部分持续在内的音.\par
+\qquad 切分音开始往往带有重音, 因此切分音和节拍重音是有矛盾的.\par
+\qquad 切分音的效果也可以在强拍与次强拍休止时求得.\par
+
+[\textbf{切分音的写法}] \par
+\qquad 1. 在一小节之内的切分音往往记成一个音符(也可以写成两个音符加连线);\par
+\qquad 2. 两小节之间的切分音用两个音符来记写, 并用连线连接起来.\par
+
+\end{document}

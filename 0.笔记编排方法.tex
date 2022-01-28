@@ -1,0 +1,68 @@
+\include{header}
+\begin{document}
+\begin{center} 
+ \Large \textbf{音乐理论基础}\par
+ \textbf{序.乐理笔记编排方法}
+\end{center}
+
+\large
+在不另行约定时, \par
+
+使用下面的记号对小节内容进行划分:\par
+\large 
+\begin{center}
+ \textbf{0.分节标题}\\
+\end{center}
+ 
+使用下面的记号编写条目:\par
+[\textbf{条目名}] 条目内容, 公式$Formula$.\\
+
+使用下面的记号绘制五线谱: \par
+\qquad 1. instrumentnumber记号用于描述乐器种数;\par
+\qquad 2. setstaffs1记号用于描述五线谱的行数;\par
+\qquad 3. generalmeter记号通过meterfrac记号描述节拍;\par
+\qquad 4. startextract记号和zendextract记号中间记录音符.\par
+\instrumentnumber{1}
+\setstaffs1{2}
+\generalmeter{\meterfrac24}
+\startextract
+    % 在这里编写音符内容.
+\zendextract
+
+使用下面的记号记录音符:\par
+\qquad 1. Notes记号用于开始新的小节, bar记号用于小节结束;\par
+\qquad 2. wh, h, q, c和cc分别记号全音符, 半音符, 四分音符, 八分音符和十六分音符, 后接a记号表示符杆方向自动, 音阶记录在花括号中;\par
+\qquad 3. en记号用于调整音符的间距;\par
+\qquad 4. 竖直制表符用于从下一行切换到相对的上一行.\par
+\startextract
+    \Notes \ha{c}|\qa{j}\qa{j}\en\bar
+    \Notes \ha{e}|\qa{n}\qa{n}\en\bar
+    \Notes \ha{f}|\qa{o}\qa{o}\en\bar
+    \NOTEs \ha{e}|\ha{n}\en\bar
+\zendextract
+
+\clearpage
+
+使用下面的记号记录连音线:\par
+\qquad 1. 记号islurd<编号><音高>用于开始记录上行连音线, 记号isluru<编号><音高>用于开始记录下行连音线;\par
+\qquad 2. 记号tslur<编号><音高>用于结束连音线.\par
+\startextract
+    \Notes \islurd0c\ha{c}|\isluru1j\qa{j}\qa{j}\en\bar
+    \Notes \ha{e}|\qa{n}\qa{n}\en\bar
+    \Notes \ha{f}|\qa{o}\qa{o}\en\bar
+    \NOTEs \tslur0e\ha{e}|\tslur1n\ha{n}\en\bar
+\zendextract
+
+使用下面的记号记录渐强与渐弱:\par
+\qquad 1. 记号icresc标记起点;\par
+\qquad 2. 记号lmidstaff, cmidstaff, zmidstaff标记三个行外位置, 用于标记其他记号的位置;\par
+\qquad 3. 记号tcresc标记渐强终点, 记号tdecresc标记渐弱终点;\par
+\qquad 4. 记号p为力度记号.\par
+\startextract
+    \Notes \zmidstaff{\p}\islurd0c\ha{c}\icresc|\isluru1j\qa{j}\qa{j}\en\bar
+    \Notes \ha{e}|\qa{n}\qa{n}\en\bar
+    \Notes \ha{f}\cmidstaff{\tcresc}|\qa{o}\qa{o}\en\bar
+    \NOTEs \tslur0e\ha{e}|\tslur1n\ha{n}\en\bar
+\zendextract
+
+\end{document}
